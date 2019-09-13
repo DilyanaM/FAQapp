@@ -1,0 +1,17 @@
+.question {
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  float: right;
+}
+
+.btn-group button {
+  min-width: 85px;
+}
+
+.question-text {
+  float: left;
+  line-height: 38px;
+  margin-bottom: 0;
+}

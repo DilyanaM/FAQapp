@@ -8,18 +8,12 @@ import { Question } from '../../models/Question';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit {
-  @Input('question') question:Question;
+export class QuestionComponent {
+  @Input('question') question: Question;
 
-  constructor(
-    public dataService:DataService
-  ) { }
-
-  ngOnInit() {
-  }
+  constructor(public dataService: DataService) {}
 
   removeQuestion(question) {
     this.dataService.removeQuestion(question);
   }
-
 }

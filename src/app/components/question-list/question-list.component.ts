@@ -8,11 +8,9 @@ import { Question } from '../../models/Question';
   styleUrls: ['./question-list.component.css']
 })
 export class QuestionListComponent implements OnInit {
-  questions:Question[];
+  questions: Question[];
 
-  constructor(public dataService:DataService) { 
-    
-  }
+  constructor(public dataService:DataService) {}
 
   ngOnInit() {
     this.questions = this.dataService.getQuestions();
@@ -21,5 +19,4 @@ export class QuestionListComponent implements OnInit {
   addQuestion(question:Question) {
     this.dataService.addQuestion(question);
   }
-
 }
