@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Question } from '../../models/Question';
 
 @Component({
@@ -8,12 +8,12 @@ import { Question } from '../../models/Question';
 })
 export class AddQuestionComponent {
   @Output() questionAdded = new EventEmitter<Question>();
-  text: string;
+  question: string;
   answer: string;
 
   addQuestion() {
     this.questionAdded.emit({
-      text: this.text,
+      text: this.question,
       answer: this.answer,
       hide: true
     });
