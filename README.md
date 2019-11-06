@@ -2,21 +2,45 @@
 
 Simple application for adding / removing FAQs
 
-## Development server
+## Install dependencies
 
-Run `ng serve -o` for a dev server. The app will run and open at [http://localhost:4200/](http://localhost:4200/) in the browser.
+```
+npm install
+```
 
-## Build
+## Available scripts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Development server
 
-## Running unit tests
+```
+ng serve -o
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This will run and open the app at [http://localhost:4200/](http://localhost:4200/) in the browser.
 
-## Running end-to-end tests
+### Build
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+ng build
+```
+
+The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+### Running unit tests
+
+```
+ng test
+```
+
+Executes unit tests via [Karma](https://karma-runner.github.io).
+
+### Running end-to-end tests
+
+```
+ng e2e
+```
+
+Executes the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Resources
 
