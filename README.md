@@ -2,6 +2,12 @@
 
 Simple application for adding / removing FAQs
 
+## Clone the repository
+
+```
+git clone https://github.com/DilyanaM/FAQapp.git && cd FAQapp
+```
+
 ## Install dependencies
 
 ```
