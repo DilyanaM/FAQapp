@@ -11,7 +11,7 @@ import { Question } from '../../models/question';
 export class QuestionComponent {
   @Input('question') question: Question;
 
-  constructor(public dataService: DataService) {}
+  constructor(private dataService: DataService) {}
 
   removeQuestion(question: Question) {
     this.dataService.removeQuestion(question);

@@ -10,7 +10,7 @@ import { Question } from '../../models/question';
 export class QuestionListComponent implements OnInit {
   questions: Question[];
 
-  constructor(public dataService: DataService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.questions = this.dataService.getQuestions();

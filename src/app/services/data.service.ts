@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Question } from '../models/question';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class DataService {
   questions: Question[];
 
-  // get questions from localStorage
   getQuestions() {
     if(localStorage.getItem('questions') === null) {
       this.questions = [];
@@ -20,7 +19,7 @@ export class DataService {
 
     let questions: Question[];
 
-    if(localStorage.getItem('questions') === null) {
+    if (localStorage.getItem('questions') === null) {
       questions = [];
 
       questions.unshift(question);
@@ -36,8 +35,8 @@ export class DataService {
   }
 
   removeQuestion(question: Question) {
-    for(let i = 0; i < this.questions.length; i++) {
-      if(question == this.questions[i]) {
+    for (let i = 0; i < this.questions.length; i++) {
+      if (question == this.questions[i]) {
         this.questions.splice(i, 1);
 
         localStorage.setItem('questions', JSON.stringify(this.questions));
