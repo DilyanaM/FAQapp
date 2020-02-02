@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Question } from '../models/Question';
+import { Question } from '../models/question';
 
 @Injectable()
 export class DataService {
@@ -15,33 +15,26 @@ export class DataService {
     return this.questions;
   }
 
-  // add question to localStorage
   addQuestion(question: Question) {
     this.questions.unshift(question);
 
-    // init local variable
-    let questions;
+    let questions: Question[];
 
     if(localStorage.getItem('questions') === null) {
       questions = [];
 
-      // push new question
       questions.unshift(question);
 
-      // set new array to localStorage
       localStorage.setItem('questions', JSON.stringify(questions));
     } else {
       questions = JSON.parse(localStorage.getItem('questions'));
 
-      // add new question
       questions.unshift(question);
 
-      //reset localStorage
       localStorage.setItem('questions', JSON.stringify(questions));
     }
   }
 
-  // remove question from localStorage
   removeQuestion(question: Question) {
     for(let i = 0; i < this.questions.length; i++) {
       if(question == this.questions[i]) {

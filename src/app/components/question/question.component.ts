@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
-import { Question } from '../../models/Question';
+import { Question } from '../../models/question';
 
 @Component({
   selector: 'app-question',
@@ -13,7 +13,7 @@ export class QuestionComponent {
 
   constructor(public dataService: DataService) {}
 
-  removeQuestion(question) {
+  removeQuestion(question: Question) {
     this.dataService.removeQuestion(question);
   }
 }

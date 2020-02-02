@@ -27,7 +27,7 @@ This will run and open the app at [http://localhost:4200/](http://localhost:4200
 ### Build
 
 ```
-ng build
+ng build --base-href ./
 ```
 
 The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
