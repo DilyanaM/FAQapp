@@ -16,7 +16,7 @@
     "@angular/cli": "^8.3.24",
     "@angular/common": "^4.2.4",
     "@angular/compiler": "^4.2.4",
-    "@angular/core": "^4.2.4",
+    "@angular/core": "^4.4.7",
     "@angular/forms": "^4.2.4",
     "@angular/http": "^4.2.4",
     "@angular/platform-browser": "^4.2.4",
