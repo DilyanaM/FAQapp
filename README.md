@@ -40,14 +40,6 @@ ng test
 
 Executes unit tests via [Karma](https://karma-runner.github.io).
 
-### Running end-to-end tests
-
-```
-ng e2e
-```
-
-Executes the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
 ## Resources
 
 - [Angular CLI](https://cli.angular.io/) v1.4.5
