@@ -17,5 +17,7 @@ export class AddQuestionComponent {
       answer: this.answer,
       hide: true
     });
+    this.question = '';
+    this.answer = '';
   }
 }
